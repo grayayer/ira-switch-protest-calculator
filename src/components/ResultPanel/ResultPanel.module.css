@@ -1,0 +1,142 @@
+.panel {
+  padding-left: 3rem;
+}
+
+@media (max-width: 800px) {
+  .panel {
+    padding-left: 0;
+  }
+}
+
+.sectionTitle {
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #888;
+  border-bottom: 2px solid #0a0a0a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+/* ── FEATURED BLOCK ── */
+.featured {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 8px solid #555;
+}
+
+.featuredCost {
+  border-left-color: #e8000d;
+}
+
+.featuredSavings {
+  border-left-color: #1a8a1a;
+}
+
+.featuredLabel {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  margin-bottom: 0.5rem;
+}
+
+.featuredValue {
+  display: block;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900;
+  color: #e8000d;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.featuredSavings .featuredValue {
+  color: #4caf50;
+}
+
+.featuredContext {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #aaaaaa;
+  line-height: 1.4;
+}
+
+/* ── RESULT ROWS ── */
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  gap: 1rem;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.rowLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.labelText {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0a0a0a;
+}
+
+.subLabel {
+  font-size: 0.68rem;
+  color: #888;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.value {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #0a0a0a;
+  white-space: nowrap;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.valueLarge {
+  font-size: 1.5rem;
+}
+
+.valueCost {
+  color: #e8000d;
+}
+
+.valueSavings {
+  color: #1a8a1a;
+}
+
+.placeholder {
+  font-size: 0.8rem;
+  color: #999;
+  font-style: italic;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 2px dashed #ccc;
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border: 3px solid #0a0a0a;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+
+.rate {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #e8000d;
+  letter-spacing: -0.02em;
+}

@@ -1,0 +1,145 @@
+.form {
+  padding-right: 3rem;
+  border-right: 3px solid #0a0a0a;
+}
+
+@media (max-width: 800px) {
+  .form {
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 3px solid #0a0a0a;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.sectionTitle {
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #888;
+  border-bottom: 2px solid #0a0a0a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.field {
+  margin-bottom: 1.75rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  margin-bottom: 0.4rem;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.prefix,
+.suffix {
+  display: flex;
+  align-items: center;
+  padding: 0 0.6rem;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 3px solid #0a0a0a;
+  user-select: none;
+}
+
+.input {
+  flex: 1;
+  appearance: none;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border: 3px solid #0a0a0a;
+  padding: 0.55rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.1s;
+}
+
+/* When input has no prefix/suffix, restore full border */
+.field > .input {
+  border-left: 3px solid #0a0a0a;
+}
+
+.input:focus {
+  border-color: #e8000d;
+  background-color: #fffaf0;
+}
+
+.input.inputError {
+  border-color: #e8000d;
+  background-color: #fff5f5;
+}
+
+/* Remove number input spinners */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border: 3px solid #0a0a0a;
+  padding: 0.55rem 2.5rem 0.55rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230a0a0a' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  transition: border-color 0.1s;
+}
+
+.select:focus {
+  border-color: #e8000d;
+}
+
+.helper {
+  font-size: 0.72rem;
+  color: #666;
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
+
+.error {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e8000d;
+  margin-top: 0.35rem;
+  letter-spacing: 0.01em;
+}
+
+.warning {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #b35900;
+  margin-top: 0.35rem;
+  background-color: #fff8ee;
+  border-left: 3px solid #b35900;
+  padding: 0.3rem 0.5rem;
+}
