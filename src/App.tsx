@@ -93,6 +93,8 @@ function App() {
               src={trumpImg}
               alt="Illustration of money burning"
               className={styles.headerImage}
+              width={300}
+              height={360}
             />
           </div>
         </div>{/* end headerInner */}

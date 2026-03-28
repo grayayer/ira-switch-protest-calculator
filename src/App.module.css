@@ -20,6 +20,10 @@
 	gap: 2rem;
 	justify-content: space-between;
 	padding: 0 2rem;
+	@media (width < 769px) {
+		flex-direction: column-reverse;
+		padding: 0 1rem;
+	}
 }
 
 .headerText {
@@ -29,11 +33,13 @@
 }
 
 .headerImageCol {
-	flex:0 0 300px
+	flex:1;
+	display: flex;
+	justify-content: center;
 }
 
 .headerImage {
-	max-width: 100%;
+	max-width: 300px;
 }
 
 .privacyBanner {
