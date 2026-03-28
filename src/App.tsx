@@ -4,6 +4,7 @@ import { calculate, getMarginalRate } from './lib/calculator';
 import { CURRENT_YEAR, DEFAULT_RETURN_RATE, DEFAULT_WITHDRAWAL_YEARS } from './constants/limits';
 import InputForm from './components/InputForm/InputForm';
 import ResultPanel from './components/ResultPanel/ResultPanel';
+import trumpImg from './trump-burning-money.avif';
 import styles from './App.module.css';
 
 interface FormState {
@@ -62,28 +63,39 @@ function App() {
   return (
     <div className={styles.app}>
       <header className={styles.header}>
-        <div className={styles.privacyBanner}>
-          <span className={styles.privacyIcon} aria-hidden="true">&#9679;</span>
-          This calculator runs entirely in your browser. No data is collected, stored, or transmitted.
-        </div>
-        <h1 className={styles.headline}>WHAT DOES YOUR<br />PROTEST COST?</h1>
-        <div className={styles.subheadlineRow}>
-          <p className={styles.subheadline}>
-            Calculate the real financial cost of recharacterizing your Roth IRA contribution
-            to a traditional IRA as an act of political resistance.
-          </p>
-          <button
-            className={styles.aboutToggle}
-            aria-expanded={aboutOpen}
-            aria-controls="about-panel"
-            onClick={() => setAboutOpen(o => !o)}
-          >
-            <span>What's this about?</span>
-            <span className={styles.aboutToggleIcon} aria-hidden="true">
-              {aboutOpen ? '▲' : '▼'}
-            </span>
-          </button>
-        </div>
+        <div className={styles.headerInner}>
+          <div className={styles.headerText}>
+            <div className={styles.privacyBanner}>
+              <span className={styles.privacyIcon} aria-hidden="true">&#9679;</span>
+              This calculator runs entirely in your browser. No data is collected, stored, or transmitted.
+            </div>
+            <h1 className={styles.headline}>WHAT DOES YOUR<br />PROTEST COST?</h1>
+            <div className={styles.subheadlineRow}>
+              <p className={styles.subheadline}>
+                Calculate the real financial cost of recharacterizing your Roth IRA contribution
+                to a traditional IRA as an act of political resistance.
+              </p>
+              <button
+                className={styles.aboutToggle}
+                aria-expanded={aboutOpen}
+                aria-controls="about-panel"
+                onClick={() => setAboutOpen(o => !o)}
+              >
+                <span>What's this about?</span>
+                <span className={styles.aboutToggleIcon} aria-hidden="true">
+                  {aboutOpen ? '▲' : '▼'}
+                </span>
+              </button>
+            </div>
+          </div>
+          <div className={styles.headerImageCol}>
+            <img
+              src={trumpImg}
+              alt="Illustration of money burning"
+              className={styles.headerImage}
+            />
+          </div>
+        </div>{/* end headerInner */}
 
         <div
           id="about-panel"

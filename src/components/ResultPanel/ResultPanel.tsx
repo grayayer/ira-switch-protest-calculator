@@ -1,5 +1,6 @@
 import { CalculatorResults } from '../../lib/types';
 import Tooltip from '../Tooltip/Tooltip';
+import SpendingComparisons from '../SpendingComparisons/SpendingComparisons';
 import styles from './ResultPanel.module.css';
 
 const INFLATION_TOOLTIP =
@@ -92,6 +93,9 @@ export default function ResultPanel({ results }: ResultPanelProps) {
           value={results ? formatCurrency(results.taxSavingsThisYear) : dash}
           positive={false}
         />
+        {results && results.taxSavingsThisYear > 0 && (
+          <SpendingComparisons amount={results.taxSavingsThisYear} />
+        )}
         <ResultRow
           label="Projected future value"
           subLabel={results ? `In ${results.yearsToWithdrawal} years at your rate of return` : 'Amount compounded to withdrawal year'}
