@@ -67,7 +67,7 @@ function App() {
           <div className={styles.headerText}>
             <div className={styles.privacyBanner}>
               <span className={styles.privacyIcon} aria-hidden="true">&#9679;</span>
-              This calculator runs entirely in your browser. No data is collected, stored, or transmitted.
+              This calculator runs entirely in your browser. No personal financial data is collected, stored, or transmitted.
             </div>
             <h1 className={styles.headline}>WHAT DOES YOUR<br />PROTEST COST?</h1>
             <div className={styles.subheadlineRow}>
